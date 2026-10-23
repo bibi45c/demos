@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Title</title>
+  <style>
+    :root { --bg: #fafaf9; --fg: #1c1917; --muted: #78716c; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1c1917; --fg: #fafaf9; --muted: #a8a29e; }
+    }
+    body { margin: 0; padding: 48px 16px; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; }
+    a { color: inherit; }
+    .back { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- 资源一律用相对路径（./img.png），站点部署在 /demos/<目录名>/ 下 -->
+    <a class="back" href="../">← 全部 Demo</a>
+    <h1>Demo Title</h1>
+    <p>在这里放页面内容。</p>
+  </main>
+</body>
+</html>
